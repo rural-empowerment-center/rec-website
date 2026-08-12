@@ -3,291 +3,1044 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rural Empowerment Center (REC) | Climate, Water & Sustainable Development in Cameroon</title>
-  <meta name="description" content="Rural Empowerment Center (REC) is a Cameroon-based youth-led non-profit working with rural communities on climate action, water security, sustainable agriculture, environmental protection and resilient development.">
-  <meta name="keywords" content="Rural Empowerment Center, REC Cameroon, NGO Cameroon, rural development Cameroon, climate action Cameroon, water security Cameroon, sustainable agriculture Cameroon, environmental protection Cameroon, climate-smart agriculture, rural communities Cameroon, forest restoration Cameroon">
-  <meta name="author" content="Rural Empowerment Center (REC)">
-  <meta name="robots" content="index, follow">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Rural Empowerment Center (REC) | Rooted in Cameroon. Growing change.">
-  <meta property="og:description" content="Youth-led non-profit working with rural communities on climate action, water security, sustainable agriculture and community development in Cameroon.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="Rural Empowerment Center">
+  <title>Rural Empowerment Center | REC Cameroon</title>
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Rural Empowerment Center (REC)">
-  <meta name="twitter:description" content="Rooted in Cameroon. Growing change. Resilient communities. Shared progress.">
+  <meta name="description" content="Rural Empowerment Center (REC) works with rural communities in Cameroon to advance climate action, environmental protection, water security, sustainable agriculture and community development.">
 
-  <link rel="canonical" href="https://ruralempowermentcenter.org/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="keywords" content="Rural Empowerment Center, REC Cameroon, climate action, water security, environmental protection, sustainable agriculture, rural development, Cameroon">
+
+  <meta name="author" content="Rural Empowerment Center">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #24352a;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #e5ebe5;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .nav-container {
+      width: 92%;
+      max-width: 1200px;
+      margin: auto;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: #176b3a;
+    }
+
+    .logo-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #176b3a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .logo-text {
+      line-height: 1.15;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-size: 17px;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 11px;
+      color: #718078;
+      letter-spacing: 1px;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #405047;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #176b3a;
+    }
+
+    .nav-button {
+      background: #176b3a;
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 7px;
+    }
+
+    .nav-button:hover {
+      background: #0f542c;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 650px;
+      background:
+        linear-gradient(90deg, rgba(10,50,29,0.88), rgba(10,50,29,0.55), rgba(10,50,29,0.25)),
+        url("https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .hero-container {
+      width: 92%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-content {
+      max-width: 720px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #d9edcf;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.02;
+      margin-bottom: 25px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #b9e39d;
+    }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.75;
+      max-width: 680px;
+      color: #edf5ee;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 23px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .button-primary {
+      background: #b6d98f;
+      color: #163822;
+    }
+
+    .button-primary:hover {
+      background: #d0eab4;
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      border: 1px solid rgba(255,255,255,0.7);
+      color: white;
+    }
+
+    .button-outline:hover {
+      background: white;
+      color: #176b3a;
+    }
+
+    /* INTRO */
+    .intro {
+      padding: 85px 0;
+      background: #ffffff;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .section-label {
+      color: #176b3a;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.15;
+      color: #173b25;
+      margin-bottom: 22px;
+    }
+
+    .intro-text {
+      color: #617068;
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .intro-image {
+      min-height: 420px;
+      border-radius: 14px;
+      background:
+        linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)),
+        url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=85")
+        center/cover no-repeat;
+    }
+
+    /* STATS */
+    .stats {
+      background: #eff6ec;
+      padding: 55px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .stat {
+      padding: 15px;
+    }
+
+    .stat-number {
+      font-size: 38px;
+      font-weight: 800;
+      color: #176b3a;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      color: #637068;
+      font-size: 14px;
+    }
+
+    /* WORK */
+    .work {
+      padding: 90px 0;
+      background: #ffffff;
+    }
+
+    .center-heading {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .center-heading p {
+      color: #65736b;
+      font-size: 16px;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .work-card {
+      border: 1px solid #e3eae3;
+      border-radius: 12px;
+      padding: 32px 28px;
+      background: white;
+      transition: 0.3s;
+    }
+
+    .work-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(26,76,43,0.10);
+    }
+
+    .work-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: #e8f3e2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    .work-card h3 {
+      color: #173b25;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .work-card p {
+      color: #68756e;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* FEATURE */
+    .feature {
+      padding: 90px 0;
+      background: #173b25;
+      color: white;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .feature-image {
+      min-height: 430px;
+      border-radius: 14px;
+      background:
+        linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)),
+        url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1100&q=85")
+        center/cover no-repeat;
+    }
+
+    .feature .section-label {
+      color: #b6d98f;
+    }
+
+    .feature .section-title {
+      color: white;
+    }
+
+    .feature p {
+      color: #d6e2d9;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 25px 0 32px;
+    }
+
+    .feature-list li {
+      margin-bottom: 14px;
+      color: #e6eee8;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      color: #b6d98f;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* IMPACT */
+    .impact {
+      padding: 90px 0;
+      background: #f7faf6;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .impact-card {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      border: 1px solid #e4ebe4;
+    }
+
+    .impact-card h3 {
+      color: #176b3a;
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .impact-card p {
+      color: #69756e;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 85px 0;
+      background:
+        linear-gradient(rgba(23,107,58,0.92), rgba(23,107,58,0.92)),
+        url("https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #e5f1e8;
+      font-size: 17px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #10251a;
+      color: #d8e2db;
+      padding: 65px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+
+    footer p,
+    footer li {
+      color: #aebdb4;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-brand strong {
+      display: block;
+      color: white;
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: #8fa198;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      nav {
+        gap: 13px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .intro-grid,
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .work-grid,
+      .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .feature-image {
+        order: 2;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .nav-container {
+        min-height: 70px;
+      }
+
+      .logo-text span {
+        display: none;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .hero-content {
+        padding: 60px 0;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .intro,
+      .work,
+      .feature,
+      .impact {
+        padding: 65px 0;
+      }
+
+      .work-grid,
+      .impact-grid,
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
-<body>
-  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Rural Empowerment Center Home">
-        <span class="logo-mark">REC</span>
-        <span class="logo-text">Rural Empowerment Center<span>Cameroon</span></span>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+
+      <a href="#top" class="logo">
+        <div class="logo-mark">REC</div>
+        <div class="logo-text">
+          <strong>Rural Empowerment Center</strong>
+          <span>CAMEROON</span>
+        </div>
       </a>
 
-      <nav class="nav-desktop" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="our-work.html">Our Work</a></li>
-          <li><a href="field-action.html">Field Action</a></li>
-          <li><a href="impact.html">Impact</a></li>
-          <li><a href="partnerships.html">Partnerships</a></li>
-          <li><a href="partner-with-us.html">Partner With Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="nav-cta"><a href="partner-with-us.html" class="btn btn-primary">Partner With Us</a></li>
-        </ul>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Our Work</a>
+        <a href="#impact">Impact</a>
+        <a href="#partnerships">Partnerships</a>
+        <a href="#contact" class="nav-button">Partner With Us</a>
       </nav>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-
-    <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="our-work.html">Our Work</a></li>
-        <li><a href="field-action.html">Field Action</a></li>
-        <li><a href="impact.html">Impact</a></li>
-        <li><a href="partnerships.html">Partnerships</a></li>
-        <li><a href="partner-with-us.html">Partner With Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="partner-with-us.html" class="btn btn-primary">Partner With Us</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" aria-label="Hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Rooted in Cameroon. Growing change.</h1>
-          <p class="subheading">Resilient communities. Shared progress.</p>
-          <p>Rural Empowerment Center works alongside rural communities to turn local knowledge into lasting solutions for people, nature and future generations.</p>
-          <div class="btn-group">
-            <a href="our-work.html" class="btn btn-primary btn-lg">Explore Our Work</a>
-            <a href="partner-with-us.html" class="btn btn-secondary btn-lg">Partner With Us</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-container">
+      <div class="hero-content">
 
-    <!-- Who We Are -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Who We Are</h2>
-          <p>Rural Empowerment Center (REC) is a youth-led, non-profit, community-based organization established in 2016 and formally registered in 2021. Based in Dschang (West Region) with a presence in Bamenda (North-West Region), we work alongside rural communities across Cameroon to promote practical solutions for resilient communities, environmental sustainability, climate adaptation, water security, sustainable agriculture and improved livelihoods.</p>
-        </div>
-      </div>
-    </section>
+        <div class="eyebrow">Rural Empowerment Center · Cameroon</div>
 
-    <!-- What We Do -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>What We Do</h2>
-          <p>We focus on practical, community-centered action that strengthens resilience and protects the environment.</p>
-        </div>
-        <div class="card-grid six">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🌍</div>
-            <h3>Climate Action</h3>
-            <p>Supporting communities to understand climate risks and implement practical adaptation and mitigation measures grounded in local realities.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">💧</div>
-            <h3>Water Security</h3>
-            <p>Improving water access, resource management and community resilience in the face of climate-related water challenges.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🌾</div>
-            <h3>Sustainable Agriculture</h3>
-            <p>Promoting climate-smart agriculture, sustainable land management and resilient rural livelihoods.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🌳</div>
-            <h3>Environmental Protection</h3>
-            <p>Supporting forest conservation, restoration, ecosystem protection and community stewardship of natural resources.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🤝</div>
-            <h3>Community Development</h3>
-            <p>Working with communities to design and implement inclusive solutions that improve livelihoods and strengthen local capacity.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">📚</div>
-            <h3>Youth & Environmental Education</h3>
-            <p>Engaging young people through awareness campaigns, Environmental Clubs, seminars and community sensitization.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+        <h1>
+          Rooted in communities.<br>
+          <span>Growing change.</span>
+        </h1>
 
-    <!-- Our Approach -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Approach</h2>
-          <p>Everything we do is guided by three interconnected pillars.</p>
-        </div>
-        <div class="approach-grid">
-          <div class="approach-item">
-            <span class="num">1</span>
-            <h3>Community</h3>
-            <p>We place rural communities at the centre of every initiative, valuing local knowledge and ensuring meaningful participation.</p>
-          </div>
-          <div class="approach-item">
-            <span class="num">2</span>
-            <h3>Nature</h3>
-            <p>We protect and restore ecosystems so that people and nature can thrive together for generations to come.</p>
-          </div>
-          <div class="approach-item">
-            <span class="num">3</span>
-            <h3>Action</h3>
-            <p>We turn research and local insight into practical field work that delivers measurable, lasting change.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <p>
+          We work alongside rural communities to advance climate action,
+          protect the environment, strengthen water security, promote
+          sustainable agriculture and build resilient futures.
+        </p>
 
-    <!-- Our Impact (verified only) -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Impact</h2>
-          <p>Key facts about Rural Empowerment Center.</p>
+        <div class="buttons">
+          <a href="#work" class="button button-primary">Explore Our Work</a>
+          <a href="#about" class="button button-outline">Discover REC</a>
         </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="value">2016</div>
-            <div class="label">Founded</div>
-          </div>
-          <div class="stat-card">
-            <div class="value">2021</div>
-            <div class="label">Registered</div>
-          </div>
-          <div class="stat-card">
-            <div class="value">Rural</div>
-            <div class="label">Communities Focus</div>
-          </div>
-          <div class="stat-card">
-            <div class="value">Cameroon</div>
-            <div class="label">Location</div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Featured Projects -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Featured Projects</h2>
-          <p>Practical initiatives that combine community knowledge with evidence-based action.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Rural community water source and landscape in Cameroon" width="800" height="450" loading="lazy">
-            <div class="content">
-              <span class="project-tag">Water Security</span>
-              <h3>Enhancing Rural Water Security in Santa Village</h3>
-              <p>An initiative focused on improving rural water security and strengthening community resilience through practical, community-centered approaches.</p>
-              <a href="impact.html" class="btn btn-secondary">Learn more</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Forest landscape representing restoration and environmental monitoring" width="800" height="450" loading="lazy">
-            <div class="content">
-              <span class="project-tag">Forest Restoration</span>
-              <h3>Eco-Digital Forest Restoration Initiative</h3>
-              <p>Focused on forest restoration and climate action in the Bafut-Ngemba Forest landscape, combining community participation with digital technologies, including drones and environmental monitoring.</p>
-              <a href="impact.html" class="btn btn-secondary">Learn more</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work With Us CTA -->
-    <section class="cta-band">
-      <div class="container">
-        <h2>Work With Us</h2>
-        <p>Change becomes stronger when communities, institutions and partners work together.</p>
-        <a href="partner-with-us.html" class="btn btn-primary btn-lg">Partner With REC</a>
-      </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="section">
-      <div class="container text-center">
-        <h2>Ready to grow change together?</h2>
-        <p style="max-width:560px;margin:0 auto 1.75rem;">Whether you are a donor, development partner, researcher, university, government institution or community organization, we welcome collaboration for resilient rural communities.</p>
-        <div class="btn-group" style="justify-content:center;">
-          <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-          <a href="partner-with-us.html" class="btn btn-secondary btn-lg">Explore Partnerships</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <span class="logo-mark">REC</span>
-            <span class="logo-text">Rural Empowerment Center</span>
-          </a>
-          <p>Rooted in Cameroon. Growing change.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="our-work.html">Our Work</a></li>
-            <li><a href="field-action.html">Field Action</a></li>
-            <li><a href="impact.html">Impact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Engage</h4>
-          <ul>
-            <li><a href="partnerships.html">Partnerships</a></li>
-            <li><a href="partner-with-us.html">Partner With Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <p>Dschang, West Region, Cameroon<br>Bamenda, North-West Region, Cameroon</p>
-          <p><a href="mailto:rural.org@proten.me">rural.org@proten.me</a></p>
-          <p>Facebook — Rural Empowerment Center</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© Rural Empowerment Center (REC). All rights reserved.</p>
       </div>
     </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="intro" id="about">
+    <div class="container">
+
+      <div class="intro-grid">
+
+        <div>
+          <div class="section-label">Who We Are</div>
+
+          <h2 class="section-title">
+            Local action for sustainable communities.
+          </h2>
+
+          <p class="intro-text">
+            Rural Empowerment Center (REC) is a Cameroon-based non-profit
+            organization established in 2016 and officially registered on
+            June 28, 2021.
+          </p>
+
+          <p class="intro-text">
+            From our base in Dschang, West Region, we work with communities,
+            schools, young people, institutions and partners to develop
+            practical responses to environmental and development challenges.
+          </p>
+
+          <p class="intro-text">
+            Our approach connects community knowledge, research, education,
+            environmental action and partnerships to create solutions that
+            can last.
+          </p>
+        </div>
+
+        <div class="intro-image"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+
+      <div class="stats-grid">
+
+        <div class="stat">
+          <div class="stat-number">2016</div>
+          <div class="stat-label">REC Established</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-number">2021</div>
+          <div class="stat-label">Official Registration</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-number">6+</div>
+          <div class="stat-label">Areas of Action</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Potential for Impact</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OUR WORK -->
+  <section class="work" id="work">
+    <div class="container">
+
+      <div class="center-heading">
+        <div class="section-label">What We Do</div>
+
+        <h2 class="section-title">
+          Practical action. Shared knowledge. Lasting impact.
+        </h2>
+
+        <p>
+          REC brings communities and partners together around the issues
+          that matter most for resilient rural development.
+        </p>
+      </div>
+
+      <div class="work-grid">
+
+        <div class="work-card">
+          <div class="work-icon">💧</div>
+          <h3>Water Security</h3>
+          <p>
+            Supporting communities and institutions to improve water
+            management, protect water sources and strengthen access to
+            safe and sustainable water resources.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-icon">🌱</div>
+          <h3>Sustainable Agriculture</h3>
+          <p>
+            Promoting climate-smart and sustainable agricultural practices
+            that strengthen food security, livelihoods and community
+            resilience.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-icon">🌳</div>
+          <h3>Forest Restoration</h3>
+          <p>
+            Supporting restoration and protection of forest ecosystems
+            through community participation, technology, monitoring and
+            environmental education.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-icon">🌍</div>
+          <h3>Climate Action</h3>
+          <p>
+            Turning climate knowledge into practical local action through
+            awareness, research, dialogue, adaptation and community-led
+            initiatives.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-icon">♻️</div>
+          <h3>Environmental Protection</h3>
+          <p>
+            Mobilizing communities and institutions around environmental
+            conservation, clean-up campaigns, ecosystem protection and
+            responsible resource management.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <div class="work-icon">🤝</div>
+          <h3>Community Development</h3>
+          <p>
+            Building partnerships and strengthening local capacity so that
+            communities can identify challenges, develop solutions and
+            lead positive change.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED ACTION -->
+  <section class="feature">
+    <div class="container">
+
+      <div class="feature-grid">
+
+        <div class="feature-image"></div>
+
+        <div>
+          <div class="section-label">Community in Action</div>
+
+          <h2 class="section-title">
+            From ideas to action on the ground.
+          </h2>
+
+          <p>
+            REC believes that meaningful development begins with listening
+            to communities and working with them to transform knowledge
+            into practical solutions.
+          </p>
+
+          <ul class="feature-list">
+            <li>Community-based environmental action</li>
+            <li>Water source protection and awareness</li>
+            <li>Climate and sustainable agriculture initiatives</li>
+            <li>Environmental education in schools</li>
+            <li>Research and evidence-based decision making</li>
+            <li>Partnerships for sustainable development</li>
+          </ul>
+
+          <a href="#contact" class="button button-primary">
+            Work With REC
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="impact" id="impact">
+    <div class="container">
+
+      <div class="center-heading">
+        <div class="section-label">Our Approach</div>
+
+        <h2 class="section-title">
+          Change that starts locally.
+        </h2>
+
+        <p>
+          We connect community experience, science, education and
+          partnerships to respond to complex environmental challenges.
+        </p>
+      </div>
+
+      <div class="impact-grid">
+
+        <div class="impact-card">
+          <h3>Community-Led</h3>
+          <p>
+            Communities are not simply beneficiaries. They are partners,
+            knowledge holders and leaders in the solutions we support.
+          </p>
+        </div>
+
+        <div class="impact-card">
+          <h3>Evidence-Based</h3>
+          <p>
+            We combine local knowledge with research, data and field
+            experience to inform practical interventions.
+          </p>
+        </div>
+
+        <div class="impact-card">
+          <h3>Partnership Driven</h3>
+          <p>
+            We collaborate with institutions, schools, researchers,
+            organizations and communities to expand the reach of local action.
+          </p>
+        </div>
+
+        <div class="impact-card">
+          <h3>Environment Focused</h3>
+          <p>
+            Protecting ecosystems and natural resources is central to
+            building healthy and resilient communities.
+          </p>
+        </div>
+
+        <div class="impact-card">
+          <h3>Knowledge Sharing</h3>
+          <p>
+            Through webinars, campaigns, seminars and community engagement,
+            we help make knowledge accessible and useful.
+          </p>
+        </div>
+
+        <div class="impact-card">
+          <h3>Long-Term Resilience</h3>
+          <p>
+            Our goal is not temporary activity, but stronger communities
+            that can continue creating solutions into the future.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PARTNERSHIPS -->
+  <section class="feature" id="partnerships">
+    <div class="container">
+
+      <div class="feature-grid">
+
+        <div>
+          <div class="section-label">Partnerships</div>
+
+          <h2 class="section-title">
+            Better together, stronger for communities.
+          </h2>
+
+          <p>
+            REC welcomes collaboration with organizations, researchers,
+            schools, public institutions, development partners, foundations
+            and individuals who share a commitment to sustainable development.
+          </p>
+
+          <p>
+            Together, we can turn ideas, resources and knowledge into
+            meaningful action for rural communities and the environment.
+          </p>
+
+          <a href="#contact" class="button button-primary">
+            Become a Partner
+          </a>
+        </div>
+
+        <div class="feature-image"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="container">
+
+      <h2>Be part of the change.</h2>
+
+      <p>
+        Whether you are a community organization, institution, researcher,
+        donor, volunteer or development partner, there is a place for you
+        in building resilient communities and a healthier environment.
+      </p>
+
+      <div class="buttons" style="justify-content:center;">
+        <a href="mailto:rural.org@proten.me" class="button button-primary">
+          Contact REC
+        </a>
+
+        <a href="#top" class="button button-outline">
+          Back to Top
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <strong>Rural Empowerment Center</strong>
+
+          <p>
+            A Cameroon-based non-profit organization working with
+            communities for climate action, environmental protection,
+            water security, sustainable agriculture and community development.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+
+          <ul>
+            <li><a href="#about">About REC</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#partnerships">Partnerships</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <ul>
+            <li>Dschang, West Region</li>
+            <li>Cameroon</li>
+            <li>
+              <a href="mailto:rural.org@proten.me">
+                rural.org@proten.me
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2026 Rural Empowerment Center (REC). All rights reserved.
+        </div>
+
+        <div>
+          Established 2016 · Registered June 28, 2021
+        </div>
+
+      </div>
+
+    </div>
+
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
